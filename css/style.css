@@ -737,6 +737,18 @@ body {
     color: var(--color-white);
 }
 
+.download-cv .btn-secondary {
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.download-cv .btn-secondary:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
 .copyright {
     text-align: center;
     padding-top: 20px;
