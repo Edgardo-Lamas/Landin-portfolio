@@ -312,5 +312,25 @@
             }
         });
     </script>
+    
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.link/76wzbt" id="whatsapp-button" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <img src="./img/whatsapp.png" alt="WhatsApp" draggable="false" />
+    </a>
+    
+    <script>
+        // Script para asegurar que no haya conflictos con Adobe Acrobat u otras extensiones
+        document.addEventListener('DOMContentLoaded', function() {
+            const whatsappButton = document.getElementById('whatsapp-button');
+            
+            // Prevenir cualquier comportamiento no deseado
+            whatsappButton.addEventListener('mouseenter', function(e) {
+                e.stopPropagation();
+            });
+            
+            // Asegurarse que el z-index se mantenga alto
+            whatsappButton.style.zIndex = "9999";
+        });
+    </script>
 </body>
 </html>
